@@ -77,10 +77,19 @@ function App() {
           </div>
           <Container>
             <div className="text-center mb-5">
-              <h4>Section 2</h4>
+              <h4>
+                <MktoText
+                  id="section-2-header-text"
+                  name="Section 2 Header Text"
+                >
+                  Section 2
+                </MktoText>
+              </h4>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <MktoText id="section-2-text" name="Section 2 Text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </MktoText>
               </div>
             </div>
             <div className="row">
