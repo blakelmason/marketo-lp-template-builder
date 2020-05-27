@@ -1,30 +1,45 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/server'
-// import App from './src/App'
+import sass from 'node-sass'
+import React from 'react'
+import ReactDOM from 'react-dom/server'
+import App from './src/App'
 import fs from 'fs'
-// import variables from './src/variables'
-// import Handlebars from 'handlebars'
+import Handlebars from 'handlebars'
+const sassExtract = require('sass-extract')
 
-// let reactMarkup = ReactDOM.renderToString(<App />)
+const rendered = sassExtract.renderSync({
+  file: './src/scss/mktoVariables.scss',
+})
 
-// console.log(reactMarkup)
+const css = rendered.vars.global
 
-// const htmlIndex = fs.readFileSync('./index.html', 'utf-8')
-// const template = Handlebars.compile(htmlIndex)
-// const compiled = template({ variables, body: reactMarkup })
-// fs.writeFileSync('build.html', compiled)
+fs.writeFileSync(__dirname + '/src/scssVariables.json', JSON.stringify(css))
 
-// fs.writeFileSync('body.html', ReactDOM.renderToStaticMarkup(<App />))
-// const sass = require('node-sass')
-// const test = sass.renderSync({ file: __dirname + '/template/src/style.scss' })
-// console.log(test.css.toString())
+import mktoVariables from './src/variables'
 
-// var sass = require('node-sass')
-// var result = sass.renderSync({
-//   file: __dirname + '/src/scss/index.scss',
-// })
+let buildCss = sass.renderSync({ file: './build/mkto.scss' }).css.toString()
 
-// console.log(result.css.toString())
+for (const key in mktoVariables) {
+  if (key.substring(0, 4) === 'SCSS') {
+    const regexp = new RegExp(mktoVariables[key].default, 'gi')
+    buildCss = buildCss.replace(regexp, `\${${key}}`)
+  }
+}
 
-import variables from './src/scss/mktoVariables.scss'
-console.log(variables)
+const baseCss = sass
+  .renderSync({ file: './src/scss/style.scss' })
+  .css.toString()
+
+let reactMarkup = ReactDOM.renderToString(<App />)
+
+const htmlIndex = fs.readFileSync('./build/templates/index.html', 'utf-8')
+const template = Handlebars.compile(htmlIndex)
+const compiled = template({
+  mktoVariables,
+  body: reactMarkup,
+  css: `<style>
+  ${buildCss}
+
+  ${baseCss}
+  </style>`,
+})
+fs.writeFileSync('./build/index.html', compiled)

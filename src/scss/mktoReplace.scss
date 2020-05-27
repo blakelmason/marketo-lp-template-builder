@@ -1,0 +1,15 @@
+@mixin mktoButton($color, $backgroundColor) {
+  color: $color;
+  background-color: $backgroundColor;
+  &:hover {
+    background-color: darken($backgroundColor, 10%);
+    color: $color;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem unquote($backgroundColor + '44');
+  }
+}
+
+.btn-mkto {
+  @include mktoButton($btnColorDefault, $btnBackgroundDefault);
+}

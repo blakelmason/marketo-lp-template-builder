@@ -1,0 +1,12 @@
+:export {
+  btnColorDefault: #ffffff;
+  btnBackgroundDefault: #5944b0; }
+
+.btn-mkto {
+  color: #ffffff;
+  background-color: #5944b0; }
+  .btn-mkto:hover {
+    background-color: #46368b;
+    color: #ffffff; }
+  .btn-mkto:focus {
+    box-shadow: 0 0 0 0.2rem #5944b044; }

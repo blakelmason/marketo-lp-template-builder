@@ -1,34 +1,43 @@
-import variables from './scss/mktoVariables.scss'
+import variables from './scssVariables.json'
 
 const STRING = 'mktoString'
 const COLOR = 'mktoColor'
+const LINK = 'https://www.google.com'
 
-const { buttonBackgroundColor, buttonTextColor } = variables
+const SCSSbtnBackgroundDefault = variables.$btnBackgroundDefault.value.hex
+const SCSSbtnColorDefault = variables.$btnColorDefault.value.hex
 
-const defaults = {
-  buttonBackgroundColor,
-  buttonTextColor,
-  logo:
-    'http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cornell-cookson-logo-525x82.png',
-}
-
-const marketoVariables = {
-  logo: {
-    class: STRING,
-    name: 'Logo Image',
-  },
-  buttonBackgroundColor: {
+const mktoVariables = {
+  SCSSbtnBackgroundDefault: {
     class: COLOR,
-    name: 'Button Background Color',
+    name: 'Button Color',
+    default: SCSSbtnBackgroundDefault,
   },
-  buttonTextColor: {
+  SCSSbtnColorDefault: {
     class: COLOR,
     name: 'Button Text Color',
+    default: SCSSbtnColorDefault,
+  },
+  button1: {
+    class: STRING,
+    name: 'Button 1 Link',
+    default: LINK,
+  },
+  button1Text: {
+    class: STRING,
+    name: 'Button 1 Text',
+    default: 'BUTTON 1',
+  },
+  button2: {
+    class: STRING,
+    name: 'Button 2 Link',
+    default: LINK,
+  },
+  button2Text: {
+    class: STRING,
+    name: 'Button 2 Text',
+    default: 'BUTTON 2',
   },
 }
 
-for (const key in marketoVariables) {
-  marketoVariables[key].default = defaults[key]
-}
-
-export default marketoVariables
+export default mktoVariables

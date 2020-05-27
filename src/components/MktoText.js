@@ -1,9 +1,10 @@
 import React from 'react'
+import id from '../util/id'
 
-export default function MktoText({ children, id, name }) {
+export default function MktoText({ children, name }) {
   return (
-    <div className="mktoText" id={id} mktoname={name}>
-      {children}
+    <div className="mktoText" id={id(name)} mktoname={name}>
+      {name} {children && '. ' + children}
     </div>
   )
 }

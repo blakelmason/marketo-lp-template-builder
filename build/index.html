@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <title>Page Title</title>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -11,25 +13,458 @@
       crossorigin="anonymous"
     />
     <meta
-      class="mktoString"
-      id="logo"
-      mktoName="Logo Image"
-      default="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cornell-cookson-logo-525x82.png"
+      class="mktoColor"
+      id="SCSSbtnBackgroundDefault"
+      mktoName="Button Color"
+      default="#5944b0"
     />
     <meta
       class="mktoColor"
-      id="buttonBackgroundColor"
-      mktoName="Button Background Color"
-      default=""
-    />
-    <meta
-      class="mktoColor"
-      id="buttonTextColor"
+      id="SCSSbtnColorDefault"
       mktoName="Button Text Color"
-      default=""
+      default="#ffffff"
     />
+    <meta
+      class="mktoString"
+      id="button1"
+      mktoName="Button 1 Link"
+      default="https://www.google.com"
+    />
+    <meta
+      class="mktoString"
+      id="button1Text"
+      mktoName="Button 1 Text"
+      default="BUTTON 1"
+    />
+    <meta
+      class="mktoString"
+      id="button2"
+      mktoName="Button 2 Link"
+      default="https://www.google.com"
+    />
+    <meta
+      class="mktoString"
+      id="button2Text"
+      mktoName="Button 2 Text"
+      default="BUTTON 2"
+    />
+
+    <!-- css -->
+
+    <style>
+      .btn-mkto {
+      color: ${SCSSbtnColorDefault};
+      background-color: ${SCSSbtnBackgroundDefault}; }
+      .btn-mkto:hover {
+        background-color: #46368b;
+        color: ${SCSSbtnColorDefault}; }
+      .btn-mkto:focus {
+        box-shadow: 0 0 0 0.2rem ${SCSSbtnBackgroundDefault}44; }
+
+
+      .mktoImg.mktoGen {
+      width: 100%; }
+    </style>
   </head>
   <body>
-    <main><div class="text-center p-3"><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cornell-cookson-logo-525x82.png" alt="logo" style="max-height:50px;max-width:100%"/></div><div class="position-relative"><div class="d-flex align-items-center mb-5 position-relative" style="height:500px"><img class="position-absolute" src="http://info.cornellcookson.com/rs/256-VME-936/images/header-image-1920x664.jpg" alt="header" style="height:500px;width:100%;object-fit:cover;object-position:100%"/><div style="max-width:1200px;margin-left:auto;margin-right:auto;padding:0px 16px 0px 16px"><div class="row no-gutters w-100 text-white"><div class="d-none d-xl-block col-12 col-xl-6"></div><div class="col-12 col-xl-6 h-100 pl-xl-5 d-flex  flex-column align-items-center d-xl-block"><h1 class="header-text mb-4 mb-sm-2"><div class="mktoText" id="section-1-header" mktoname="Section 1 Header">Section 1 Header</div><div style="position:relative;width:60px;left:2px;border-bottom:2px solid white"></div></h1><div class="mb-4 header-detail" style="text-justify:inter-word;text-align:justify"><div class="mktoText" id="section-1-text" mktoname="Section 1 Text">Section 1 text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div></div><div class="row justify-content-center"><div class="col-12 col-xl-6 my-1 my-xl-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-6 my-1 my-xl-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-6 my-1 my-xl-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-6 my-1 my-xl-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-6 my-1 my-xl-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-6 my-1 my-xl-2 justify-content-center d-flex"><button class="w-100 btn btn-sm btn-mkto" style="max-width:330px">SUBMIT CTA</button></div></div></div></div></div></div><div style="max-width:1200px;margin-left:auto;margin-right:auto;padding:0px 16px 0px 16px"><div class="text-center mb-5"><h4>Section 2</h4><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div><div class="row"><div class="col-12 col-xl-6 mb-5 mb-xl-0 d-flex flex-column justify-content-between"><h4>Section 3</h4><div style="text-justify:inter-word;text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div><div class="text-center text-xl-left my-5 my-xl-0"><button class="btn btn-sm btn-mkto" style="width:200px">Link 1</button></div></div><div class="col-12 col-xl-6 d-flex justify-content-center"><img class="img-fluid" src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-laptop-preview-600x360.png" alt="laptop"/></div></div><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-gray-divider-line-1366x47.png" class="img-fluid" style="margin-top:75px;margin-bottom:75px" alt="divider"/><h4 class="text-center mb-5">Section 4</h4><div class="row"><div class="col-12 col-xl-4 mb-5 mb-xl-0"><div class="d-flex flex-column align-items-center mx-3"><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-circle-photo-one-172x172.png" alt="bubble" class="mb-4"/><h5 class="mb-4">Header Goes Here</h5><div class="text-center" style="max-width:600px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div><div class="col-12 col-xl-4 mb-5 mb-xl-0"><div class="d-flex flex-column align-items-center mx-3"><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-circle-photo-two-172x172.png" alt="bubble" class="mb-4"/><h5 class="mb-4">Header Goes Here</h5><div class="text-center" style="max-width:600px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div><div class="col-12 col-xl-4 mb-5 mb-xl-0"><div class="d-flex flex-column align-items-center mx-3"><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-circle-photo-three-172x172.png" alt="bubble" class="mb-4"/><h5 class="mb-4">Header Goes Here</h5><div class="text-center" style="max-width:600px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div><div class="text-center mb-5 mt-xl-5"><button class="btn btn-sm btn-mkto" style="width:200px">LEARN MORE</button></div></div><div class="mb-2"><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cta-background-section-1920x398.png" alt="cta-background" class="position-absolute mt-auto" style="height:400px;width:100%;object-fit:cover;object-position:100%;bottom:0"/><div style="max-width:1200px;margin-left:auto;margin-right:auto;padding:0px 16px 0px 16px"><div class="row" style="height:400px"><div class="col-12 col-lg-7 h-100 w-100 text-dark py-4"><div class="h-100 text-center d-flex flex-column justify-content-center align-items-center text-white px-4 position-relative"><img class="position-absolute h-100 w-100" src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-message-background-761x347.png" alt="message-background" style="z-index:0"/><div style="z-index:1"><img src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-chat-icon-circle-88x90.png" alt="chat-icon" class="mb-4"/><h5 class="mb-4">Section 6</h5><div style="max-width:400px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div></div></div></div></div></div></main><footer><div class="bg-dark text-light text-center pt-5 pb-5 px-3"><h5 class="mb-2">Section 7</h5><div class="mx-auto mb-4" style="max-width:500px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div><div class="row justify-content-center mx-auto" style="max-width:700px"><div class="col-12 col-xl-4 my-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-4 my-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-4 my-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-4 my-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-4 my-2 justify-content-center d-flex"><input class="w-100" style="max-width:330px"/></div><div class="col-12 col-xl-4 my-2 justify-content-center d-flex"><button class="w-100 btn btn-sm btn-mkto" style="max-width:330px">SUBMIT CTA</button></div></div></div></footer>
+    <main>
+      <div class="text-center p-3">
+        <div class="mktoImg" id="logo" mktoname="Logo">
+          <img
+            src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cornell-cookson-logo-525x82.png"
+            alt="logo"
+            style="max-height: 50px; max-width: 100%;"
+          />
+        </div>
+      </div>
+      <div class="position-relative">
+        <div
+          class="d-flex align-items-center mb-5 position-relative"
+          style="height: 500px;"
+        >
+          <div class="position-absolute w-100" style="height: 500px;">
+            <div
+              class="mktoImg"
+              id="section-1-background-image"
+              mktoname="Section 1 Background Image"
+            >
+              <img
+                src="http://info.cornellcookson.com/rs/256-VME-936/images/header-image-1920x664.jpg"
+                alt="header"
+                class="w-100"
+                style="height: 500px; object-fit: cover; object-position: 100%;"
+              />
+            </div>
+          </div>
+          <div class="container-fluid mx-auto" style="max-width: 1200px;">
+            <div class="row no-gutters w-100 text-white">
+              <div class="d-none d-xl-block col-12 col-xl-6"></div>
+              <div
+                class="col-12 col-xl-6 h-100 pl-xl-5 d-flex flex-column align-items-center d-xl-block"
+              >
+                <h1 class="header-text mb-4 mb-sm-2">
+                  <div
+                    class="mktoText"
+                    id="section-1-header"
+                    mktoname="Section 1 Header"
+                  >
+                    Section 1 Header<!-- -->
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      width: 60px;
+                      left: 2px;
+                      border-bottom: 2px solid white;
+                    "
+                  ></div>
+                </h1>
+                <div
+                  class="mb-4 header-detail"
+                  style="text-justify: inter-word; text-align: justify;"
+                >
+                  <div
+                    class="mktoText"
+                    id="section-1-text"
+                    mktoname="Section 1 Text"
+                  >
+                    Section 1 Text<!-- -->
+                    <!-- -->. Section 1 text. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod
+                  </div>
+                </div>
+                <div class="mktoForm w-100" id="form1" mktoname="Form 1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid mx-auto" style="max-width: 1200px;">
+          <div class="text-center mb-5">
+            <h4>
+              <div
+                class="mktoText"
+                id="section-2-header"
+                mktoname="Section 2 Header"
+              >
+                Section 2 Header<!-- -->
+              </div>
+            </h4>
+            <div>
+              <div
+                class="mktoText"
+                id="section-2-text"
+                mktoname="Section 2 Text"
+              >
+                Section 2 Text<!-- -->
+                <!-- -->. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 col-xl-6 mb-5 mb-xl-0 d-flex flex-column justify-content-between"
+            >
+              <h4>
+                <div
+                  class="mktoText"
+                  id="section-3-header"
+                  mktoname="Section 3 Header"
+                >
+                  Section 3 Header<!-- -->
+                </div>
+              </h4>
+              <div style="text-justify: inter-word; text-align: justify;">
+                <div
+                  class="mktoText"
+                  id="section-3-text"
+                  mktoname="Section 3 Text"
+                >
+                  Section 3 Text<!-- -->
+                  <!-- -->. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua.
+                </div>
+              </div>
+              <div class="text-center text-xl-left my-5 my-xl-0">
+                <a
+                  href="${button1}"
+                  target="_blank"
+                  class="btn btn-sm btn-mkto"
+                  style="width: 200px;"
+                  ><div class="mktoText" id="button-1" mktoname="BUTTON 1">
+                    BUTTON 1<!-- -->
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 d-flex justify-content-center">
+              <div
+                class="mktoImg"
+                id="section-3-image"
+                mktoname="Section 3 Image"
+              >
+                <img
+                  class="img-fluid m-auto d-block"
+                  src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-laptop-preview-600x360.png"
+                  alt="laptop"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mktoImg" id="divider" mktoname="Divider">
+            <img
+              src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-gray-divider-line-1366x47.png"
+              class="img-fluid"
+              style="margin-top: 75px; margin-bottom: 75px;"
+              alt="divider"
+            />
+          </div>
+          <h4 class="text-center mb-5">
+            <div class="mktoText" id="section-4" mktoname="Section 4">
+              Section 4<!-- -->
+            </div>
+          </h4>
+          <div class="row">
+            <div class="col-12 col-lg-4 mb-5 mb-xl-0">
+              <div class="d-flex flex-column align-items-center mx-3">
+                <div
+                  class="mktoImg"
+                  id="bubble-1-image"
+                  mktoname="Bubble 1 Image"
+                >
+                  <div>
+                    <img
+                      src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-circle-photo-one-172x172.png"
+                      alt="bubble"
+                      class="mb-4 d-block mx-auto"
+                    />
+                  </div>
+                </div>
+                <h5 class="mb-2">
+                  <div
+                    class="mktoText"
+                    id="bubble-header-1"
+                    mktoname="Bubble Header 1"
+                  >
+                    Bubble Header 1<!-- -->
+                  </div>
+                </h5>
+                <div class="text-center" style="max-width: 350px;">
+                  <div
+                    class="mktoText"
+                    id="bubble-text-1"
+                    mktoname="Bubble Text 1"
+                  >
+                    Bubble Text 1<!-- -->
+                    <!-- -->. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-5 mb-xl-0">
+              <div class="d-flex flex-column align-items-center mx-3">
+                <div
+                  class="mktoImg"
+                  id="bubble-2-image"
+                  mktoname="Bubble 2 Image"
+                >
+                  <div>
+                    <img
+                      src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-circle-photo-two-172x172.png"
+                      alt="bubble"
+                      class="mb-4 d-block mx-auto"
+                    />
+                  </div>
+                </div>
+                <h5 class="mb-2">
+                  <div
+                    class="mktoText"
+                    id="bubble-header-2"
+                    mktoname="Bubble Header 2"
+                  >
+                    Bubble Header 2<!-- -->
+                  </div>
+                </h5>
+                <div class="text-center" style="max-width: 350px;">
+                  <div
+                    class="mktoText"
+                    id="bubble-text-2"
+                    mktoname="Bubble Text 2"
+                  >
+                    Bubble Text 2<!-- -->
+                    <!-- -->. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-5 mb-xl-0">
+              <div class="d-flex flex-column align-items-center mx-3">
+                <div
+                  class="mktoImg"
+                  id="bubble-3-image"
+                  mktoname="Bubble 3 Image"
+                >
+                  <div>
+                    <img
+                      src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-circle-photo-three-172x172.png"
+                      alt="bubble"
+                      class="mb-4 d-block mx-auto"
+                    />
+                  </div>
+                </div>
+                <h5 class="mb-2">
+                  <div
+                    class="mktoText"
+                    id="bubble-header-3"
+                    mktoname="Bubble Header 3"
+                  >
+                    Bubble Header 3<!-- -->
+                  </div>
+                </h5>
+                <div class="text-center" style="max-width: 350px;">
+                  <div
+                    class="mktoText"
+                    id="bubble-text-3"
+                    mktoname="Bubble Text 3"
+                  >
+                    Bubble Text 3<!-- -->
+                    <!-- -->. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-5 mt-xl-5">
+            <a
+              href="${button2}"
+              target="_blank"
+              class="btn btn-sm btn-mkto"
+              style="width: 200px;"
+              ><div class="mktoText" id="button-2" mktoname="BUTTON 2">
+                BUTTON 2<!-- -->
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="w-100 position-absolute" style="height: 400px;">
+            <div
+              class="mktoImg"
+              id="section-6-background-1"
+              mktoname="Section 6 Background 1"
+            >
+              <img
+                src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cta-background-section-1920x398.png"
+                alt="cta-background"
+                class="position-absolute mt-auto"
+                style="
+                  height: 400px;
+                  width: 100%;
+                  object-fit: cover;
+                  bottom: 0;
+                "
+              />
+            </div>
+          </div>
+          <div class="container-fluid mx-auto" style="max-width: 1200px;">
+            <div class="row" style="height: 400px;">
+              <div class="col-12 col-lg-7 h-100 w-100 text-dark py-4">
+                <div
+                  class="h-100 text-center d-flex flex-column justify-content-center align-items-center text-white px-4 position-relative"
+                >
+                  <div class="w-100 h-100 position-absolute d-flex">
+                    <div
+                      class="mktoImg"
+                      id="section-6-background-2"
+                      mktoname="Section 6 Background 2"
+                    >
+                      <img
+                        class="w-100 h-100"
+                        src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-message-background-761x347.png"
+                        alt="message-background"
+                        style="z-index: 0;"
+                      />
+                    </div>
+                  </div>
+                  <div style="z-index: 1;">
+                    <div
+                      class="mktoImg"
+                      id="section-6-icon"
+                      mktoname="Section 6 Icon"
+                    >
+                      <div>
+                        <img
+                          src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-chat-icon-circle-88x90.png"
+                          alt="chat-icon"
+                          class="mb-4"
+                        />
+                      </div>
+                    </div>
+                    <h5 class="mb-4">
+                      <div
+                        class="mktoText"
+                        id="section-6-header"
+                        mktoname="Section 6 Header"
+                      >
+                        Section 6 Header<!-- -->
+                      </div>
+                    </h5>
+                    <div style="max-width: 400px;">
+                      <div
+                        class="mktoText"
+                        id="section-6-text"
+                        mktoname="Section 6 Text"
+                      >
+                        Section 6 Text<!-- -->
+                        <!-- -->. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-dark text-light text-center pt-5 pb-5 px-3">
+        <h5 class="mb-2">
+          <div
+            class="mktoText"
+            id="section-7-header"
+            mktoname="Section 7 Header"
+          >
+            Section 7 Header<!-- -->
+          </div>
+        </h5>
+        <div class="mx-auto mb-4" style="max-width: 500px;">
+          <div class="mktoText" id="section-7-text" mktoname="Section 7 Text">
+            Section 7 Text<!-- -->
+            <!-- -->. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+        <div class="mktoForm w-100" id="form2" mktoname="Form 2"></div>
+      </div>
+    </footer>
   </body>
 </html>
