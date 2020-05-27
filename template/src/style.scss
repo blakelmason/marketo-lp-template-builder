@@ -1,0 +1,19 @@
+$btnColorDefault: #ffffff;
+$btnBackgroundDefault: #5944b0;
+
+.btn-custom {
+  color: $btnColorDefault;
+  background-color: $btnBackgroundDefault;
+  &:hover {
+    background-color: darken($btnBackgroundDefault, 10%);
+    color: $btnColorDefault;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($btnBackgroundDefault, 0.25);
+  }
+}
+
+:export {
+  btnColorDefault: $btnColorDefault;
+  btnBackgroundDefault: $btnBackgroundDefault;
+}
