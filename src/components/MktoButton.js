@@ -1,19 +1,15 @@
 import React from 'react'
-import MktoText from './MktoText'
-import mktoVariables from '../variables'
 
-function Button({ style, className, id }) {
+export default function MktoButton({ style, className, id }) {
   const classes = ['btn', 'btn-sm', 'btn-mkto'].join(' ')
   return (
     <a
       href={`\${${id}}`}
       target="_blank"
       className={className ? className + ' ' + classes : classes}
-      style={style}
+      style={{ ...style, width: 200 }}
     >
-      <MktoText name={mktoVariables[id + 'Text'].default} />
+      {`\${${id + 'Text'}}`}
     </a>
   )
 }
-
-export default Button

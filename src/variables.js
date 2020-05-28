@@ -1,42 +1,50 @@
-import variables from './scssVariables.json'
+import variables from './sassVariables.json'
 
 const STRING = 'mktoString'
 const COLOR = 'mktoColor'
 const LINK = 'https://www.google.com'
 
-const SCSSbtnBackgroundDefault = variables.$btnBackgroundDefault.value.hex
-const SCSSbtnColorDefault = variables.$btnColorDefault.value.hex
+const sections = 1
+const sectionsObj = {}
+for (let i = 0; i < sections; i++) {
+  const number = i + 1
+  sectionsObj[`SASSshowHideSection${number}`] = {
+    class: 'mktoBoolean',
+    mktoName: `Section ${number} Show/Hide`,
+    default: 'true',
+    true_value: 'block',
+    false_value: 'none',
+    false_value_name: 'Hide',
+    true_value_name: 'Show',
+  }
+}
 
 const mktoVariables = {
-  SCSSbtnBackgroundDefault: {
+  ...sectionsObj,
+  SASSbtnBackgroundDefault: {
     class: COLOR,
-    name: 'Button Color',
-    default: SCSSbtnBackgroundDefault,
+    mktoName: 'Button Color',
+    default: variables.$btnBackgroundDefault.value.hex,
   },
-  SCSSbtnColorDefault: {
+  SASSbtnColorDefault: {
     class: COLOR,
-    name: 'Button Text Color',
-    default: SCSSbtnColorDefault,
+    mktoName: 'Button Text Color',
+    default: variables.$btnColorDefault.value.hex,
+  },
+  SASSbtnBorderRadiusDefault: {
+    class: STRING,
+    mktoName: 'Button Border Radius',
+    default: variables.$btnBorderRadiusDefault.value,
   },
   button1: {
     class: STRING,
-    name: 'Button 1 Link',
+    mktoName: 'Button 1 Link',
     default: LINK,
   },
   button1Text: {
     class: STRING,
-    name: 'Button 1 Text',
-    default: 'BUTTON 1',
-  },
-  button2: {
-    class: STRING,
-    name: 'Button 2 Link',
-    default: LINK,
-  },
-  button2Text: {
-    class: STRING,
-    name: 'Button 2 Text',
-    default: 'BUTTON 2',
+    mktoName: 'Button 1 Text',
+    default: 'BUTTON 1 TEXT',
   },
 }
 
