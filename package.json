@@ -36,9 +36,11 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "handlebars": "^4.7.6",
     "lodash": "^4.17.15",
     "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass-extract": "^2.1.0"

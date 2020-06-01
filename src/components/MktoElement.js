@@ -1,8 +1,9 @@
 import React from 'react'
 import FormPlaceholder from './FormPlaceholder'
 import camelCase from 'lodash/camelCase'
+import { PropTypes } from 'prop-types'
 
-export default function MktoElement(props) {
+function MktoElement(props) {
   const { element, children, className, name, style } = props
   const id = camelCase(name)
   let text
@@ -20,3 +21,10 @@ export default function MktoElement(props) {
     </div>
   )
 }
+
+MktoElement.propTypes = {
+  name: PropTypes.string.isRequired,
+  element: PropTypes.oneOf(['mktoText', 'mktoImg', 'mktoForm']),
+}
+
+export default MktoElement
