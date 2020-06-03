@@ -1,30 +1,24 @@
 import React from 'react'
 import FormPlaceholder from './FormPlaceholder'
-import camelCase from 'lodash/camelCase'
 import { PropTypes } from 'prop-types'
+import classnames from 'classnames'
 
-function MktoElement(props) {
-  const { element, children, className, name, style } = props
-  const id = camelCase(name)
-  let text
-  if (element === 'mktoText') {
-    if (children) text = name + '. '
-    else text = name
-  }
+function MktoElement({ el, children }) {
   return (
-    <div className={element} id={id} mktoname={name}>
-      <div style={style} className={className}>
-        {text}
-        {element === 'mktoForm' && <FormPlaceholder />}
-        {children}
-      </div>
+    <div className={classnames(el, 'mktoElement')}>
+      {
+        {
+          mktoText: 'Text Element' + (children ? '. ' + children : ''),
+          mktoForm: <FormPlaceholder />,
+          mktoImg: children,
+        }[el]
+      }
     </div>
   )
 }
 
 MktoElement.propTypes = {
-  name: PropTypes.string.isRequired,
-  element: PropTypes.oneOf(['mktoText', 'mktoImg', 'mktoForm']),
+  el: PropTypes.oneOf(['mktoText', 'mktoImg', 'mktoForm']),
 }
 
 export default MktoElement

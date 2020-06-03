@@ -20,12 +20,14 @@
   },
   "homepage": "https://github.com/blakelmason/marketo-template#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
+    "@babel/core": "^7.10.2",
     "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.10.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
+    "gulp": "^4.0.2",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "sass": "^1.26.5",
@@ -36,13 +38,13 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "classnames": "^2.2.6",
     "handlebars": "^4.7.6",
     "lodash": "^4.17.15",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "sass-extract": "^2.1.0"
+    "react-dom": "^16.13.1"
   }
 }

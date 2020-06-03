@@ -1,0 +1,16 @@
+# CSS classes for Marketo
+
+    .show-hide
+        - Creates a toggleable element which can be shown / hidden.
+
+    .btn-mkto
+        - Creates a button with an editable link and text.
+
+
+# MarketoCss.scss can be used to create the styling used by the Marketo variables in marketoVariables.js.
+    - MarketoVariables.js contains an object which creates a variable in Marketo for each key.
+    - Each variable can then be used in marketoCss.scss.
+    - A $ must be put in front of the key when the key is used in marketoCss.scss.
+
+
+# The MktoElement component can be used to create a Marketo Element Image, Text, or Form depending on which prop is passed as el.
