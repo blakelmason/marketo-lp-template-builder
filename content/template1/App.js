@@ -155,26 +155,27 @@ function App() {
               </div>
             </Container>
           </div>
-          <div className="mb-2">
-            <div
-              className="w-100 position-absolute"
-              style={{ height: height2 }}
-            >
-              <MktoElement el="mktoImg">
-                <img
-                  src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cta-background-section-1920x398.png"
-                  alt="cta-background"
-                  className="position-absolute mt-auto"
-                  style={{
-                    height: height2,
-                    width: '100%',
-                    objectFit: 'cover',
-                    bottom: 0,
-                  }}
-                />
-              </MktoElement>
-            </div>
-            <div className="show-hide">
+          <div className="show-hide">
+            <div className="mb-2">
+              <div
+                className="w-100 position-absolute"
+                style={{ height: height2 }}
+              >
+                <MktoElement el="mktoImg">
+                  <img
+                    src="http://info.cornellcookson.com/rs/256-VME-936/images/cornell-cookson-kitchen-sink-LP-template-cta-background-section-1920x398.png"
+                    alt="cta-background"
+                    className="position-absolute mt-auto"
+                    style={{
+                      height: height2,
+                      width: '100%',
+                      objectFit: 'cover',
+                      bottom: 0,
+                    }}
+                  />
+                </MktoElement>
+              </div>
+
               <Container>
                 <div
                   className="row"
@@ -227,25 +228,26 @@ function App() {
         </div>
       </main>
       <footer>
-        <div className="bg-dark text-light text-center pt-5 pb-5 px-3">
-          <h5 className="mb-2">
-            <MktoElement el="mktoText" />
-          </h5>
-          <div className="mx-auto mb-4" style={{ maxWidth: 500 }}>
-            <MktoElement el="mktoText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </MktoElement>
+        <div className="show-hide">
+          <div className="bg-dark text-light text-center pt-5 pb-5 px-3">
+            <h5 className="mb-2">
+              <MktoElement el="mktoText" />
+            </h5>
+            <div className="mx-auto mb-4" style={{ maxWidth: 500 }}>
+              <MktoElement el="mktoText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </MktoElement>
+            </div>
+            <MktoElement el="mktoForm" />
           </div>
-          <MktoElement el="mktoForm" />
         </div>
       </footer>
     </>
   )
 }
 
-function Bubble({ image, i }) {
-  const count = i + 1
+function Bubble({ image }) {
   return (
     <div className="col-12 col-lg-4 mb-5 mb-xl-0">
       <div className="d-flex flex-column align-items-center mx-3">
