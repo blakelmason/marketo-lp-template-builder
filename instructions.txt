@@ -14,3 +14,9 @@
 
 
 # The MktoElement component can be used to create a Marketo Element Image, Text, or Form depending on which prop is passed as el.
+
+# The src folder has all the files needed for building a template.
+    - Useful global components can be found in the parent components folder.
+    - Once a landing page is finished, run the gulp build command to build out the Marketo html template.
+    - If you want to save a template, copy the src folder into content and rename it.
+    - Then, replace the parent src folder with the src subfolder inside of the parent templates folder.

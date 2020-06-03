@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom/server'
 import App from './src/App'
 import fs from 'fs'
 import cheerio from 'cheerio'
-import marketoVariables from './marketoVariables'
+import marketoVariables from './src/marketoVariables'
 import sass from 'node-sass'
 import Handlebars from 'handlebars'
 
 const files = {
-  marketoVariables: './marketoVariables.js',
-  marketoCss: './marketoCss.scss',
+  marketoVariables: './src/marketoVariables.js',
+  marketoCss: './src/marketoCss.scss',
   devCss: './generated/dev.scss',
   generatedCss: './generated/style.css',
-  htmlTemplate: './templates/index.html',
-  build: './build/index.html',
+  htmlTemplate: './templates/handlebars.html',
+  build: './src/template.html',
 }
 
 gulp.task('css', (cb) => {
@@ -24,7 +24,7 @@ gulp.task('css', (cb) => {
     .join('\n')
   fs.writeFileSync(
     files.devCss,
-    variables + '\n' + `@import '../marketoCss.scss';`
+    variables + '\n' + `@import '${files.marketoCss}';`
   )
   cb()
 })

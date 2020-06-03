@@ -1,0 +1,12 @@
+.mkto-btn {
+  color: #{$mkto-btn-color};
+  background-color: #{$mkto-btn-background-color};
+  border-radius: #{$mkto-btn-border-radius};
+  &:hover {
+    box-shadow: 0 0 0 0.2rem unquote(#{$mkto-btn-background-color + '44'});
+    color: #{$mkto-btn-color};
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem unquote(#{$mkto-btn-background-color + '44'});
+  }
+}
