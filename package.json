@@ -41,7 +41,7 @@
     "cheerio": "^1.0.0-rc.3",
     "classnames": "^2.2.6",
     "handlebars": "^4.7.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
